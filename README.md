@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo/logoo-app.png" alt="Gaza Shaheed logo" width="120" />
+<img src="screenshots/logo.png" alt="Gaza Shaheed logo" width="120" />
 
 # Gaza Shaheed · شهداء غزة 
 
@@ -136,71 +136,6 @@ The app follows a **layered, controller-driven architecture** on top of GetX, wi
 - 🔑 **Admin management** to create admins and assign granular permissions
 - 📤 **Data export** gated by permission
 - 🖥️ **Desktop-friendly layout** with sidebar navigation (Windows)
-
----
-
-## 📁 Folder Structure
-
-```
-gaza_martyer_app/
-├── android/                    # Android platform project (manifest, splash, Firebase config)
-├── ios/                        # iOS platform project
-├── windows/                    # Windows desktop runner
-├── assets/
-│   ├── cover/                  # Cover images
-│   ├── fonts/                  # Jali Arabic, Revalia, Salsa
-│   ├── logo/                   # App icon, splash, social icons
-│   └── svgs/                   # Vector assets
-├── lib/
-│   ├── main.dart               # Entry point, theming, routes, Firebase/Supabase init
-│   ├── firebase_options.dart   # Generated Firebase options
-│   ├── shared_pref_service.dart
-│   ├── bindings/               # GetX bindings (user_binding, admin_binding)
-│   ├── components/             # Reusable widgets (cards, dialogs, nav bar, skeletons, ...)
-│   ├── config/                 # app_config, colors, themes, supabase_config
-│   ├── controllers/
-│   │   ├── Admin/              # Dashboard, permissions, moderation, notifications, ...
-│   │   └── User/               # Auth, stories, search, filters, map, favorites, OTA, ...
-│   ├── locale/                 # Translations (en / ar) and locale controller
-│   ├── models/                 # Martyr, Massacre, OtherStory, Report, SupportTicket, ...
-│   └── screens/
-│       ├── Admin/              # Dashboard shell, pages, widgets
-│       └── User/               # Home, Search, Favorite, Story, Submit, Map, Statistics, ...
-├── analysis_options.yaml
-└── pubspec.yaml
-```
-
----
-
-## 🚀 Getting Started
-
-> **Prerequisites:** Flutter SDK (Dart `^3.6.0`), a Supabase project, and a Firebase project.
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/gaza_martyer_app.git
-cd gaza_martyer_app
-
-# 2. Install dependencies
-flutter pub get
-
-# 3. Configure your backend
-#    - lib/config/supabase_config.dart  → your Supabase URL + publishable key
-#    - lib/firebase_options.dart        → generate with `flutterfire configure`
-#    - android/app/google-services.json → from your Firebase console
-
-# 4. Run
-flutter run
-```
-
-**Build release artifacts**
-
-```bash
-flutter build apk --release        # Android
-flutter build windows --release    # Windows desktop
-```
-
-> ⚠️ Never commit a `service_role` / secret key. Only the publishable (anon) key belongs in client code. Consider adding `.idea/`, `.claude/`, and `.mcp.json` to your `.gitignore`.
 
 ---
 
