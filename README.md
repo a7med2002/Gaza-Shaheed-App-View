@@ -184,7 +184,7 @@ Have an idea? [Open an issue](../../issues), contributions are welcome.
 
 <div align="center">
 
-[![Download APK](https://img.shields.io/badge/Download-Latest%20APK-brightgreen?style=for-the-badge&logo=android&logoColor=white)](https://github.com/<your-username>/gaza_martyer_app/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-Latest%20APK-brightgreen?style=for-the-badge&logo=android&logoColor=white)](https://github.com/a7med2002/Gaza-Shaheed-App-View/releases/latest)
 
 **Current version:** `1.0.5` (build 6)
 
